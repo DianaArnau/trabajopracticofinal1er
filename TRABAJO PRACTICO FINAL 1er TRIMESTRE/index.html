@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Diana Arnau</title>
+    <style>
+		#contenedor-fotos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #fotos {
+            width: 50vw;
+            height: 50vh;
+            display: block;
+        }
+
+        #foto-original {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        @media screen and (orientation:landscape) {
+            #fotos {
+                max-width: 1200px;
+                max-height: 800px;
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+            #fotos {
+                max-width: 600px;
+                max-height: 900px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Proyecto de página web</h1>
+    <div id="contenedor-fotos">
+        <picture id="fotos">
+            <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./FotosHTML/FotosparaHTML/HEIC/foto3-1920px.heic"
+                    type="image/heic">
+                <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./FotosHTML/FotosparaHTML/WEBP/foto3-1920px.webp"
+                    type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./FotosHTML/FotosparaHTML/JPG/foto3-1920px.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./FotosHTML/FotosparaHTML/HEIC/foto1-1200px.heic" type="image/heic">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./FotosHTML/FotosparaHTML/WEBP/foto1-1200px.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./FotosHTML/FotosparaHTML/JPG/foto1-1200px.jpg" type="image/jpg">
+        
+               
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./FotosHTML/FotosparaHTML/HEIC/foto4-800px.heic"
+                    type="image/heic">
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./FotosHTML/FotosparaHTML/WEBP/foto4-800px.webp"
+                    type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./FotosHTML/FotosparaHTML/JPG/foto4-800px.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./FotosHTML/FotosparaHTML/HEIC/foto2-600px.heic" type="image/heic">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./FotosHTML/FotosparaHTML/WEBP/foto2-600px.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./FotosHTML/FotosparaHTML/JPG/foto2-600px.jpg" type="image/jpg">
+        
+         
+        
+                <img id="foto-original" alt="Foto de un templo japones" title="Un sitio de mi pasión" src="./FotosHTML/FotosparaHTML/JPG/foto1-1200px.jpg" />
+        </picture>
+    </div>
+
+</body>
+
+</html>
